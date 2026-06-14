@@ -237,6 +237,225 @@
       ]
     }
   ],
+  "dwytrmda": [
+    {
+      "description": "Custom switch (https://github.com/romasku/tuya-zigbee-switch)",
+      "modelNames": [
+        "TS130F-GIR"
+      ],
+      "options": {
+        "endpointName": {
+          "1": "cover"
+        }
+      }
+    },
+    {
+      "modelNames": [
+        "TS130F-GIR"
+      ],
+      "exposes": [
+        "multiPressResetCount",
+        "networkIndicator"
+      ],
+      "options": {
+        "customAttributes": {
+          "multiPressResetCount": {
+            "type": "value",
+            "clusterId": 0,
+            "attributeId": 65282,
+            "dataType": 32,
+            "action": true
+          },
+          "networkIndicator": {
+            "type": "bool",
+            "clusterId": 0,
+            "attributeId": 65281,
+            "dataType": 16,
+            "action": true
+          }
+        },
+        "multiPressResetCount": {
+          "type": "number",
+          "min": 0,
+          "max": 255
+        },
+        "networkIndicator": {
+          "type": "toggle"
+        }
+      },
+      "endpointId": 1
+    },
+    {
+      "modelNames": [
+        "TS130F-GIR"
+      ],
+      "properties": [
+        "coverPosition"
+      ],
+      "actions": [
+        "coverStatus",
+        "coverPosition"
+      ],
+      "bindings": [
+        "cover"
+      ],
+      "reportings": [
+        "coverPosition"
+      ],
+      "exposes": [
+        "cover",
+        "coverMoving",
+        "coverMotorReversal"
+      ],
+      "options": {
+        "customAttributes": {
+          "coverMoving": {
+            "type": "enum",
+            "clusterId": 258,
+            "attributeId": 65280,
+            "dataType": 48,
+            "binding": true,
+            "reporting": {
+              "minInterval": 0,
+              "maxInterval": 255,
+              "valueChange": 1
+            }
+          },
+          "coverMotorReversal": {
+            "type": "value",
+            "clusterId": 258,
+            "attributeId": 65281,
+            "dataType": 16,
+            "action": true
+          }
+        },
+        "coverMoving": {
+          "enum": [
+            "stopped",
+            "opening",
+            "closing"
+          ]
+        },
+        "coverMotorReversal": {
+          "type": "toggle"
+        }
+      },
+      "endpointId": [
+        1,
+        2
+      ]
+    }
+  ],
+  "j1xl73iw": [
+    {
+      "description": "Custom switch (https://github.com/romasku/tuya-zigbee-switch)",
+      "modelNames": [
+        "TS130F-GIR-DUAL"
+      ],
+      "options": {
+        "endpointName": {
+          "1": "cover_left",
+          "2": "cover_right"
+        }
+      }
+    },
+    {
+      "modelNames": [
+        "TS130F-GIR-DUAL"
+      ],
+      "exposes": [
+        "multiPressResetCount",
+        "networkIndicator"
+      ],
+      "options": {
+        "customAttributes": {
+          "multiPressResetCount": {
+            "type": "value",
+            "clusterId": 0,
+            "attributeId": 65282,
+            "dataType": 32,
+            "action": true
+          },
+          "networkIndicator": {
+            "type": "bool",
+            "clusterId": 0,
+            "attributeId": 65281,
+            "dataType": 16,
+            "action": true
+          }
+        },
+        "multiPressResetCount": {
+          "type": "number",
+          "min": 0,
+          "max": 255
+        },
+        "networkIndicator": {
+          "type": "toggle"
+        }
+      },
+      "endpointId": 1
+    },
+    {
+      "modelNames": [
+        "TS130F-GIR-DUAL"
+      ],
+      "properties": [
+        "coverPosition"
+      ],
+      "actions": [
+        "coverStatus",
+        "coverPosition"
+      ],
+      "bindings": [
+        "cover"
+      ],
+      "reportings": [
+        "coverPosition"
+      ],
+      "exposes": [
+        "cover",
+        "coverMoving",
+        "coverMotorReversal"
+      ],
+      "options": {
+        "customAttributes": {
+          "coverMoving": {
+            "type": "enum",
+            "clusterId": 258,
+            "attributeId": 65280,
+            "dataType": 48,
+            "binding": true,
+            "reporting": {
+              "minInterval": 0,
+              "maxInterval": 255,
+              "valueChange": 1
+            }
+          },
+          "coverMotorReversal": {
+            "type": "value",
+            "clusterId": 258,
+            "attributeId": 65281,
+            "dataType": 16,
+            "action": true
+          }
+        },
+        "coverMoving": {
+          "enum": [
+            "stopped",
+            "opening",
+            "closing"
+          ]
+        },
+        "coverMotorReversal": {
+          "type": "toggle"
+        }
+      },
+      "endpointId": [
+        1,
+        2
+      ]
+    }
+  ],
   "tqlv4ug4": [
     {
       "description": "Custom switch (https://github.com/romasku/tuya-zigbee-switch)",
@@ -459,115 +678,6 @@
             "position_on",
             "position_off"
           ]
-        }
-      },
-      "endpointId": [
-        1
-      ]
-    }
-  ],
-  "j1xl73iw": [
-    {
-      "description": "Custom switch (https://github.com/romasku/tuya-zigbee-switch)",
-      "modelNames": [
-        "TS130F-GIR-DUAL"
-      ],
-      "options": {
-        "endpointName": {
-          "1": "cover_left",
-          "2": "cover_right"
-        }
-      }
-    },
-    {
-      "modelNames": [
-        "TS130F-GIR-DUAL"
-      ],
-      "exposes": [
-        "multiPressResetCount",
-        "networkIndicator"
-      ],
-      "options": {
-        "customAttributes": {
-          "multiPressResetCount": {
-            "type": "value",
-            "clusterId": 0,
-            "attributeId": 65282,
-            "dataType": 32,
-            "action": true
-          },
-          "networkIndicator": {
-            "type": "bool",
-            "clusterId": 0,
-            "attributeId": 65281,
-            "dataType": 16,
-            "action": true
-          }
-        },
-        "multiPressResetCount": {
-          "type": "number",
-          "min": 0,
-          "max": 255
-        },
-        "networkIndicator": {
-          "type": "toggle"
-        }
-      },
-      "endpointId": 1
-    },
-    {
-      "modelNames": [
-        "TS130F-GIR-DUAL"
-      ],
-      "properties": [
-        "coverPosition"
-      ],
-      "actions": [
-        "coverStatus",
-        "coverPosition"
-      ],
-      "bindings": [
-        "cover"
-      ],
-      "reportings": [
-        "coverPosition"
-      ],
-      "exposes": [
-        "cover",
-        "coverMoving",
-        "coverMotorReversal"
-      ],
-      "options": {
-        "customAttributes": {
-          "coverMoving": {
-            "type": "enum",
-            "clusterId": 258,
-            "attributeId": 65280,
-            "dataType": 48,
-            "binding": true,
-            "reporting": {
-              "minInterval": 0,
-              "maxInterval": 255,
-              "valueChange": 1
-            }
-          },
-          "coverMotorReversal": {
-            "type": "value",
-            "clusterId": 258,
-            "attributeId": 65281,
-            "dataType": 16,
-            "action": true
-          }
-        },
-        "coverMoving": {
-          "enum": [
-            "stopped",
-            "opening",
-            "closing"
-          ]
-        },
-        "coverMotorReversal": {
-          "type": "toggle"
         }
       },
       "endpointId": [
