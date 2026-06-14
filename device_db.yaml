@@ -33,7 +33,7 @@ MODULE_GIRIER_TS130F_1GANG:
   power: mains
   neutral: required
   output: relay
-  device_type: router
+  device_type: end_device
   stock_model_name: TS130F
   stock_manufacturer_name: _TZ3210_dwytrmda
   stock_converter_manufacturer: Tuya
@@ -60,7 +60,7 @@ MODULE_GIRIER_TS130F_2GANG:
   power: mains
   neutral: required
   output: relay
-  device_type: router
+  device_type: end_device
   stock_model_name: TS130F
   stock_manufacturer_name: _TZ3000_j1xl73iw
   stock_converter_manufacturer: Lonsonho
