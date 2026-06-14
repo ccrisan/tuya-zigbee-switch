@@ -42,7 +42,8 @@ Support new devices: [contribute/porting.md](/docs/contribute/porting.md)
 | 🚧 | 📦 | 💡 | ⚡️ | 📲 |  🏭  | Zb&nbsp;Manufacturer <br> Zb&nbsp;Model | Name <br> Z2M&nbsp;page&nbsp;🔗 | Store | Threads | Status |
 | -- | -- | -- | -- | -- | :--: | :-------------------------------------- | :------------------------------ | ----: | ------: | :----- |
 | 🟩 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3000_zmy4lslw` <br> `TS0002` | [Girier 2-gang](https://www.zigbee2mqtt.io/devices/TS0002_basic.html) | [`AlEx`](https://www.aliexpress.com/item/1005006084763437.html) | [`#029`](https://github.com/romasku/tuya-zigbee-switch/issues/29) | Supported | 
+| 🟩 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3210_dwytrmda` <br> `TS130F` | [Girier 1-gang curtains](https://www.zigbee2mqtt.io/devices/TS130F_GIRIER.html) | [`AlEx`](https://www.aliexpress.com/item/1005003864471089.html) | [`#270`](https://github.com/romasku/tuya-zigbee-switch/issues/270) | Supported | 
+| 🟩 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3000_j1xl73iw` <br> `TS130F` | [Girier 2-gang curtains](https://www.zigbee2mqtt.io/devices/TS130F_GIRIER_DUAL.html) | [`AlEx`](https://www.aliexpress.com/item/1005003864471089.html) | [`#270`](https://github.com/romasku/tuya-zigbee-switch/issues/270) | Supported - Reset button on B4 pin, same as switch | 
 | 🟩 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3000_tqlv4ug4` <br> `TS0001` | [Tuya/OXT 1-gang](https://www.zigbee2mqtt.io/devices/TS0001_switch_module.html) |   | [`#006`](https://github.com/romasku/tuya-zigbee-switch/issues/6) | Reset button on pin D2 (old) or A0 (new) | 
-| 🟧 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3000_j1xl73iw` <br> `TS130F` | [Girier 2-gang curtains](https://www.zigbee2mqtt.io/devices/TS130F_GIRIER_DUAL.html) | [`AlEx`](https://www.aliexpress.com/item/1005003864471089.html) | [`#270`](https://github.com/romasku/tuya-zigbee-switch/issues/270) | Curtains in progress! Reset button on B4 pin, same as switch | 
 
 Data from [`device_db.yaml`](/device_db.yaml)

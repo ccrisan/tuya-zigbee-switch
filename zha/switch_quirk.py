@@ -234,9 +234,10 @@ CONFIGS = [
     "zmy4lslw;TS0002-custom;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
     "Tuya-TS0002-custom;TS0002-GIR;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
     "Tuya-TS0002-custom;TS0002-custom;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
+    "dwytrmda;TS130F-GIR;BD2u;LC2;XB5B4f;CC3C4;",
+    "j1xl73iw;TS130F-GIR-DUAL;LC1;XB4D2u;CC0C4;XC3C2u;CD4D7;",
     "tqlv4ug4;TS0001-custom;BD2u;LC0;SB4u;RC2;",
     "Tuya-TS0001-custom;TS0001-custom;BD2u;LC0;SB4u;RC2;",
-    "j1xl73iw;TS130F-GIR-DUAL;LC1;XB4D2u;CC0C4;XC3C2u;CD4D7;",
 ]
 
 for config in CONFIGS:
